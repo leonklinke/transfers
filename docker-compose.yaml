@@ -4,9 +4,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    # command: tail -F anything
+    command: tail -F anything
     ports:
       - "8080:8080"
+    volumes:
+      - .:/usr/src/myapp
     depends_on:
       - db
 
