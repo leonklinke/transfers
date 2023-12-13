@@ -18,6 +18,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f26201604c87b1e01bd3d98f8d5d9a8fcbb815e8cedb41ffccbeb4bf593a35fe"
 
 [[package]]
+<<<<<<< HEAD
 name = "ahash"
 version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -46,6 +47,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "async-trait"
 version = "0.1.74"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -53,7 +56,11 @@ checksum = "a66537f1bb974b254c98ed142ff995236e81b9d0fe4db0575f46612cb15eb0f9"
 dependencies = [
  "proc-macro2",
  "quote",
+<<<<<<< HEAD
  "syn 2.0.39",
+=======
+ "syn",
+>>>>>>> 1d5e97f (axum router)
 ]
 
 [[package]]
@@ -127,6 +134,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "base64"
 version = "0.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -139,12 +147,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "35636a1494ede3b646cc98f74f8e62c773a38a659ebc777a2cf26b9b74171df9"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "bitflags"
 version = "1.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
 
 [[package]]
+<<<<<<< HEAD
 name = "bitvec"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -193,6 +204,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7f30e7476521f6f8af1a1c4c0b8cc94f0bee37d91763d0ca2665f299b6cd8aec"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "bytes"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -214,6 +227,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+<<<<<<< HEAD
 name = "chrono"
 version = "0.4.31"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -354,18 +368,23 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "equivalent"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5443807d6dff69373d433ab9ef5378ad8df50ca6298caf15de6e52e24aaf54d5"
 
 [[package]]
+<<<<<<< HEAD
 name = "finl_unicode"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8fcfdc7a0362c9f4444381a9e697c79d435fe65b52a37466fc2c1184cee9edc6"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "fnv"
 version = "1.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -381,12 +400,15 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "funty"
 version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e6d5a32815ae3f33302d95fdcb2ce17862f8c65363dcfd29360480ba1001fc9c"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "futures-channel"
 version = "0.3.29"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -402,6 +424,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "eb1d22c66e66d9d72e1758f0bd7d4fd0bee04cad842ee34587d68c07e45d088c"
 
 [[package]]
+<<<<<<< HEAD
 name = "futures-executor"
 version = "0.3.29"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -430,6 +453,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "futures-sink"
 version = "0.3.29"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -448,6 +473,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a19526d624e703a3179b3d322efec918b6246ea0fa51d41124525f00f1cc8104"
 dependencies = [
  "futures-core",
+<<<<<<< HEAD
  "futures-io",
  "futures-macro",
  "futures-task",
@@ -476,6 +502,11 @@ dependencies = [
  "cfg-if",
  "libc",
  "wasi",
+=======
+ "futures-task",
+ "pin-project-lite",
+ "pin-utils",
+>>>>>>> 1d5e97f (axum router)
 ]
 
 [[package]]
@@ -496,7 +527,11 @@ dependencies = [
  "futures-sink",
  "futures-util",
  "http",
+<<<<<<< HEAD
  "indexmap 2.1.0",
+=======
+ "indexmap",
+>>>>>>> 1d5e97f (axum router)
  "slab",
  "tokio",
  "tokio-util",
@@ -505,29 +540,36 @@ dependencies = [
 
 [[package]]
 name = "hashbrown"
+<<<<<<< HEAD
 version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8a9ee70c43aaf417c914396645a0fa852624801b24ebb7ae78fe8272889ac888"
 
 [[package]]
 name = "hashbrown"
+=======
+>>>>>>> 1d5e97f (axum router)
 version = "0.14.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "290f1a1d9242c78d09ce40a5e87e7554ee637af1351968159f4952f028f75604"
 
 [[package]]
+<<<<<<< HEAD
 name = "heck"
 version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "95505c38b4572b2d910cecb0281560f54b440a19336cbbcb27bf6ce6adc6f5a8"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "hermit-abi"
 version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d77f7ec81a6d05a3abb01ab6eb7590f6083d08449fe5a1c8b1e620283546ccb7"
 
 [[package]]
+<<<<<<< HEAD
 name = "hex"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -554,6 +596,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "http"
 version = "0.2.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -612,6 +656,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "iana-time-zone"
 version = "0.1.58"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -672,12 +717,15 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "indexmap"
 version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d530e1a18b1cb4c484e6e34556a0d948706958449fca0cab753d649f2bce3d1f"
 dependencies = [
  "equivalent",
+<<<<<<< HEAD
  "hashbrown 0.14.3",
 ]
 
@@ -700,12 +748,19 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8f518f335dce6725a761382244631d86cf0ccb2863413590b31338feb467f9c3"
 
 [[package]]
+=======
+ "hashbrown",
+]
+
+[[package]]
+>>>>>>> 1d5e97f (axum router)
 name = "itoa"
 version = "1.0.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "af150ab688ff2122fcef229be89cb50dd66af9e01a4ff320cc137eecc9bacc38"
 
 [[package]]
+<<<<<<< HEAD
 name = "js-sys"
 version = "0.3.66"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -721,18 +776,23 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "libc"
 version = "0.2.150"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "89d92a4743f9a61002fae18374ed11e7973f530cb3a3255fb354818118b2203c"
 
 [[package]]
+<<<<<<< HEAD
 name = "linked-hash-map"
 version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0717cef1bc8b636c6e1c1bbdefc09e6322da8a9321966e8928ef80d20f7f770f"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "lock_api"
 version = "0.4.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -749,6 +809,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5e6163cb8c49088c2c36f57875e58ccd8c87c7427f7fbd50ea6710b2f3f2e8f"
 
 [[package]]
+<<<<<<< HEAD
 name = "lru-cache"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -770,12 +831,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2532096657941c2fea9c289d370a250971c689d4f143798ff67113ec042024a5"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "matchit"
 version = "0.7.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0e7465ac9959cc2b1404e8e2367b43684a6d13790fe23056cc8c6c5a6b7bcb94"
 
 [[package]]
+<<<<<<< HEAD
 name = "md-5"
 version = "0.10.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -786,6 +850,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "memchr"
 version = "2.6.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -818,6 +884,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "mongodb"
 version = "2.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -865,12 +932,17 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "myapp"
 version = "0.1.0"
 dependencies = [
  "axum",
  "hyper",
+<<<<<<< HEAD
  "mongodb",
+=======
+>>>>>>> 1d5e97f (axum router)
  "serde",
  "serde_json",
  "tokio",
@@ -878,6 +950,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "num-traits"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -887,6 +960,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "num_cpus"
 version = "1.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -935,6 +1010,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "pbkdf2"
 version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -944,6 +1020,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "percent-encoding"
 version = "2.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -966,7 +1044,11 @@ checksum = "4359fd9c9171ec6e8c62926d6faaf553a8dc3f64e1507e76da7911b4f6a04405"
 dependencies = [
  "proc-macro2",
  "quote",
+<<<<<<< HEAD
  "syn 2.0.39",
+=======
+ "syn",
+>>>>>>> 1d5e97f (axum router)
 ]
 
 [[package]]
@@ -982,6 +1064,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184"
 
 [[package]]
+<<<<<<< HEAD
 name = "powerfmt"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -994,6 +1077,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5b40af805b3121feab8a3c29f04d8ad262fa8e0561883e7653e024ae4479e6de"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "proc-macro2"
 version = "1.0.70"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1003,12 +1088,15 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "quick-error"
 version = "1.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a1d01941d82fa2ab50be1e79e6714289dd7cde78eba4c074bc5a4374f650dfe0"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "quote"
 version = "1.0.33"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1018,6 +1106,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "radium"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1054,6 +1143,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "redox_syscall"
 version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1063,6 +1154,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "resolv-conf"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1087,12 +1179,15 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "rustc-demangle"
 version = "0.1.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d626bb9dae77e28219937af045c257c28bfd3f69333c512553507f5f9798cb76"
 
 [[package]]
+<<<<<<< HEAD
 name = "rustc_version"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1152,6 +1247,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "rustversion"
 version = "1.0.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1170,6 +1267,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
 
 [[package]]
+<<<<<<< HEAD
 name = "sct"
 version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1201,6 +1299,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "388a1df253eca08550bef6c72392cfe7c30914bf41df5269b68cbd6ff8f570a3"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "serde"
 version = "1.0.193"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1210,6 +1310,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "serde_bytes"
 version = "0.11.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1219,6 +1320,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "serde_derive"
 version = "1.0.193"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1226,7 +1329,11 @@ checksum = "43576ca501357b9b071ac53cdc7da8ef0cbd9493d8df094cd821777ea6e894d3"
 dependencies = [
  "proc-macro2",
  "quote",
+<<<<<<< HEAD
  "syn 2.0.39",
+=======
+ "syn",
+>>>>>>> 1d5e97f (axum router)
 ]
 
 [[package]]
@@ -1235,7 +1342,10 @@ version = "1.0.108"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3d1c7e3eac408d115102c4c24ad393e0821bb3a5df4d506a80f85f7a742a526b"
 dependencies = [
+<<<<<<< HEAD
  "indexmap 2.1.0",
+=======
+>>>>>>> 1d5e97f (axum router)
  "itoa",
  "ryu",
  "serde",
@@ -1264,6 +1374,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "serde_with"
 version = "1.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1308,6 +1419,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "signal-hook-registry"
 version = "1.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1352,6 +1465,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "spin"
 version = "0.9.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1392,6 +1506,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "syn"
 version = "2.0.39"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1409,6 +1525,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2047c6ded9c721764247e62cd3b03c09ffc529b2ba5b10ec482ae507a4a70160"
 
 [[package]]
+<<<<<<< HEAD
 name = "take_mut"
 version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1485,6 +1602,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1f3ccbac311fea05f86f61904b462b55fb3df8837a366dfc601a0161d0532f20"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "tokio"
 version = "1.34.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1511,6 +1630,7 @@ checksum = "5b8a1e28f2deaa14e508979454cb3a223b10b938b45af148bc0986de36f1923b"
 dependencies = [
  "proc-macro2",
  "quote",
+<<<<<<< HEAD
  "syn 2.0.39",
 ]
 
@@ -1522,6 +1642,9 @@ checksum = "c28327cf380ac148141087fbfb9de9d7bd4e84ab5d2c28fbc911d753de8a7081"
 dependencies = [
  "rustls",
  "tokio",
+=======
+ "syn",
+>>>>>>> 1d5e97f (axum router)
 ]
 
 [[package]]
@@ -1532,7 +1655,10 @@ checksum = "5419f34732d9eb6ee4c3578b7989078579b7f039cbbb9ca2c4da015749371e15"
 dependencies = [
  "bytes",
  "futures-core",
+<<<<<<< HEAD
  "futures-io",
+=======
+>>>>>>> 1d5e97f (axum router)
  "futures-sink",
  "pin-project-lite",
  "tokio",
@@ -1588,6 +1714,7 @@ dependencies = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "trust-dns-proto"
 version = "0.21.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1633,12 +1760,15 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "try-lock"
 version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3528ecfd12c466c6f163363caf2d02a71161dd5e1cc6ae7b34207ea2d42d81ed"
 
 [[package]]
+<<<<<<< HEAD
 name = "typed-builder"
 version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1662,12 +1792,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6f2528f27a9eb2b21e69c95319b30bd0efd85d09c379741b0f78ea1d86be2416"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "unicode-ident"
 version = "1.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b"
 
 [[package]]
+<<<<<<< HEAD
 name = "unicode-normalization"
 version = "0.1.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1710,6 +1843,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "want"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1725,6 +1860,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
 
 [[package]]
+<<<<<<< HEAD
 name = "wasm-bindgen"
 version = "0.2.89"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1791,6 +1927,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "653f141f39ec16bba3c5abe400a0c60da7468261cc2cbf36805022876bc721a8"
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "winapi"
 version = "0.3.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1813,6 +1951,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
 
 [[package]]
+<<<<<<< HEAD
 name = "windows-core"
 version = "0.51.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1822,6 +1961,8 @@ dependencies = [
 ]
 
 [[package]]
+=======
+>>>>>>> 1d5e97f (axum router)
 name = "windows-sys"
 version = "0.48.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1886,6 +2027,7 @@ name = "windows_x86_64_msvc"
 version = "0.48.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ed94fce61571a4006852b7389a063ab983c02eb1bb37b47f8272ce92d06d9538"
+<<<<<<< HEAD
 
 [[package]]
 name = "winreg"
@@ -1925,3 +2067,5 @@ dependencies = [
  "quote",
  "syn 2.0.39",
 ]
+=======
+>>>>>>> 1d5e97f (axum router)
