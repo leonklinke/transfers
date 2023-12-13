@@ -9,13 +9,12 @@ services:
       - "8080:8080"
     volumes:
       - .:/usr/src/myapp
+    environment:
+      MONGODB_URL: mongodb://mongodb:27017/transfers
     depends_on:
-      - db
+      - mongodb
 
-  db:
+  mongodb:
     image: mongo
     ports:
       - "27017:27017"
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: notasecret
