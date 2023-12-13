@@ -7,7 +7,7 @@ use axum::{
 
 pub async fn create_key(Json(payload): Json<key::CreateKey>,
 ) -> StatusCode {    
-    let _ = key::create_key(payload);
+    let _ = key::create_key(payload).await;
 
     StatusCode::CREATED
 }

@@ -2,6 +2,7 @@ use serde::Deserialize;
 use std::io::{Error};
 
 #[path = "../domain/key.rs"] pub mod key;
+#[path = "../infra/db.rs"] mod db;
 
 #[derive(Deserialize)]
 pub struct CreateKey {
@@ -9,8 +10,13 @@ pub struct CreateKey {
     pub key: String,
 }
 
-pub fn create_key(key: CreateKey) -> Result<i32, Error> {
+pub async fn create_key(key: CreateKey) -> Result<i32, Error> {
     // let key = Key::new(key.user_id, key.key);
+    println!("starting db {}", key.user_id);
+    let db = db::new_db().await.unwrap();
+    println!("listing dbs");
+    db::list_databases(db).await;
+    println!("end");
     Ok(2)
 }
 

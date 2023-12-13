@@ -1,5 +1,5 @@
 use axum::{
-    routing::{get, post},
+    routing::{post},
     Router,
 };
 pub mod key;
