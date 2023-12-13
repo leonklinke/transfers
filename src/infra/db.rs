@@ -4,7 +4,7 @@ use mongodb::{Client, options::ClientOptions};
 
 pub async fn new_db() -> Result<Client, mongodb::error::Error> {
     // Parse a connection string into an options struct.
-    let mut client_options = ClientOptions::parse("mongodb://root:notasecret@localhost:27017").await?;
+    let mut client_options = ClientOptions::parse("mongodb://root:notasecret@localhost:27017/transfers").await?;
 
     // Manually set an option.
     client_options.app_name = Some("transfers".to_string());
