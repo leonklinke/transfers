@@ -1,7 +1,7 @@
-FROM rust:latest
+FROM golang:latest
 WORKDIR /usr/src/myapp
 COPY . .
-RUN cargo install --path .
+RUN go build main.go
 
 # Expose the necessary ports
 EXPOSE 8080
