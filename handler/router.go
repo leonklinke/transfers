@@ -14,5 +14,5 @@ func Serve() {
 	r.GET("/keys", ListKeys)
 	r.POST("/keys", CreateKey)
 
-	r.Run("localhost:8080")
+	r.Run(":8080")
 }

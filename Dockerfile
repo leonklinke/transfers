@@ -1,5 +1,5 @@
 FROM golang:latest
-WORKDIR /usr/src/myapp
+WORKDIR /usr/src/api
 COPY . .
 RUN go build main.go
 
