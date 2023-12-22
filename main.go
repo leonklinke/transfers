@@ -1,7 +1,12 @@
 package main
 
-import "github.com/leonklinke/transfers/handler"
+import (
+	"github.com/leonklinke/transfers/handler"
+	"github.com/leonklinke/transfers/infra/database"
+)
 
 func main() {
-	handler.Serve()
+	mongo := &database.Mongo{}
+	client := database.NewDB(mongo)
+	handler.Serve(client)
 }

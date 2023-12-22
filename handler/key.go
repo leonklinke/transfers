@@ -7,16 +7,18 @@ import (
 	"github.com/leonklinke/transfers/usecase"
 )
 
-func CreateKey(c *gin.Context) {
-	key, err := usecase.CreateKey(usecase.CreateKeyReq{
-		UserID: c.PostForm("user_id"),
-		Key:    c.PostForm("key"),
-	})
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+func (di *Dependencies) CreateKey(ctx *gin.Context) {
+	request := &usecase.CreateKeyReq{}
+
+	if err := ctx.ShouldBindJSON(request); err != nil {
+		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 	}
 
-	c.JSON(http.StatusOK, gin.H{"key": key.Key})
+	if err := usecase.CreateKey(ctx, di.DB, request); err != nil {
+		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+	}
+
+	ctx.JSON(http.StatusOK, gin.H{"success": true})
 }
 
 type ListKeyResp struct {
@@ -24,12 +26,12 @@ type ListKeyResp struct {
 	Key    string `json:"key"`
 }
 
-func ListKeys(c *gin.Context) {
-	keys, err := usecase.ListKey(usecase.ListKeyReq{
-		UserID: c.Query("user_id"),
+func (di *Dependencies) ListKeys(ctx *gin.Context) {
+	keys, err := usecase.ListKey(ctx, di.DB, usecase.ListKeyReq{
+		UserID: ctx.Query("user_id"),
 	})
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 	}
 
 	resp := make([]ListKeyResp, 0)
@@ -41,5 +43,5 @@ func ListKeys(c *gin.Context) {
 		})
 	}
 
-	c.JSON(http.StatusOK, gin.H{"keys": resp})
+	ctx.JSON(http.StatusOK, gin.H{"keys": resp})
 }
